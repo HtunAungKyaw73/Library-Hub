@@ -1,0 +1,243 @@
+"use client"
+
+import { useState } from "react"
+import { useRouter } from "next/navigation"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { BookOpen, Calendar, User, ArrowLeft, CheckCircle, AlertCircle, Ban } from "lucide-react"
+import { useAppSelector, useAppDispatch } from "@/lib/redux/hooks"
+import { selectIsAuthenticated, selectUser } from "@/lib/redux/slices/authSlice"
+import { useBorrowBookMutation, useGetBooksQuery, useGetBorrowedBooksQuery } from "@/lib/redux/services/baserowApi"
+import { Book } from "@/lib/baserow/types"
+
+export function BookDetails({
+  book
+}: { book: Book }) {
+
+  const router = useRouter()
+
+  const isAuthenticated = useAppSelector(selectIsAuthenticated)
+  const user = useAppSelector(selectUser)
+
+  const [borrowBook, { isLoading: isBorrowing }] = useBorrowBookMutation()
+  const { data: borrowedBooks } = useGetBorrowedBooksQuery(user?.id || "", {
+    skip: !user?.id
+  })
+
+  const hasBorrowed = borrowedBooks?.some(b => b.book_id === book?.id)
+  const currentBorrows = borrowedBooks?.filter(b => b.status === "borrowed").length || 0
+  const maxBorrowsPerPeriod = +process.env.MAX_BORROWS_PER_PERIOD! || 2
+
+  const [message, setMessage] = useState<{
+    type: "success" | "error"
+    text: string
+  } | null>(null)
+
+  const hasReachedBorrowLimit = currentBorrows >= maxBorrowsPerPeriod
+
+  const handleBorrow = async () => {
+    if (!isAuthenticated || !user) {
+      router.push("/auth/login")
+      return
+    }
+
+    if (user.isAdmin) {
+      setMessage({
+        type: "error",
+        text: "Administrators cannot borrow books.",
+      })
+      return
+    }
+
+    if (hasReachedBorrowLimit) {
+      setMessage({
+        type: "error",
+        text: `You have reached the limit of ${maxBorrowsPerPeriod} books.`,
+      })
+      return
+    }
+
+    setMessage(null)
+
+    if (!book.book_id || !user?.id) {
+      setMessage({
+        type: "error",
+        text: `Missing info. BookID: ${book.book_id}, UserID: ${user.id}`
+      })
+      return
+    }
+
+    try {
+      const result = await borrowBook({
+        bookId: book.book_id,
+        userId: user.user_id,
+        dueDate: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString()
+      }).unwrap()
+      setMessage({ type: "success", text: "Book borrowed successfully!" })
+      setTimeout(() => {
+        document.querySelector(".message")?.classList.add("hidden");
+      }, 2000)
+    } catch (err) {
+      setMessage({ type: "error", text: "Failed to borrow book. Please try again." })
+    }
+  }
+
+  const renderBorrowAction = () => {
+    if (user?.isAdmin) {
+      return (
+        <Badge variant="destructive" className="text-white p-2 cursor-not-allowed">
+          <Ban className="h-4 w-4 mr-1.5" />
+          Admins Cannot Borrow
+        </Badge>
+      )
+    }
+
+    if (hasBorrowed) {
+      return (
+        <Badge variant="outline" className="text-primary border-primary cursor-not-allowed">
+          <CheckCircle className="h-4 w-4 mr-1.5" />
+          Currently Borrowed
+        </Badge>
+      )
+    }
+
+    if (hasReachedBorrowLimit) {
+      return (
+        <div className="flex items-center gap-1">
+          <Badge variant="secondary" className="text-white p-2 cursor-not-allowed mr-2">
+            <Ban className="h-4 w-4 mr-1.5" />
+            Borrow Limit Reached
+          </Badge>
+          <Button variant="destructive">
+            <Link href="/my-books">
+              Return Books
+            </Link>
+          </Button>
+        </div>
+      )
+    }
+
+    if (book.book_id) {
+      return (
+        <Button variant="secondary" className="hover:bg-secondary" onClick={handleBorrow} disabled={isBorrowing}>
+          {isBorrowing ? "Borrowing..." : "Borrow"}
+        </Button>
+      )
+    }
+
+    return (
+      <Badge variant="destructive" className="cursor-not-allowed">
+        <AlertCircle className="h-4 w-4 mr-1.5" />
+        Not Available
+      </Badge>
+    )
+  }
+
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <Button variant="ghost" asChild className="mb-6">
+        <Link href="/books">
+          <ArrowLeft className="h-4 w-4 mr-2" />
+          Back to Books
+        </Link>
+      </Button>
+
+      <div className="grid md:grid-cols-3 gap-8">
+        <div className="md:col-span-1">
+          <Card className="overflow-hidden border-border">
+            <div className="aspect-3/4 bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+              <BookOpen className="h-24 w-24 text-primary/40" />
+            </div>
+          </Card>
+        </div>
+
+        <div className="md:col-span-2 space-y-6">
+          <div>
+            <h1 className="text-3xl font-bold text-foreground mb-4">{book.title}</h1>
+            <h3 className="text-lg font-semibold text-foreground flex items-center gap-2"><User className="h-5 w-5" />{book.author_name}</h3>
+            {/* {book.author && (
+              <Link
+                href={`/authors/${book.author.id}`}
+                className="flex items-center gap-2 text-lg text-primary hover:underline"
+              >
+                <User className="h-5 w-5" />
+                {book.author.name}
+              </Link>
+            )} */}
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {book.published_year && (
+              <Badge variant="outline" className="text-sm">
+                <Calendar className="h-3.5 w-3.5 mr-1.5" />
+                {book.published_year}
+              </Badge>
+            )}
+          </div>
+
+          <Card className="border-border">
+            <CardContent className="p-4">
+              <h2 className="font-semibold mb-2 text-foreground">Description</h2>
+              <p className="text-muted-foreground leading-relaxed">{book.notes || "No description available."}</p>
+            </CardContent>
+          </Card>
+
+          {isAuthenticated && (
+            <Card className="border-border">
+              <CardContent className="p-4">
+                <h2 className="font-semibold mb-2 text-foreground">Your Borrowing Status</h2>
+                <p className="text-sm text-muted-foreground">
+                  Books borrowed:{" "}
+                  <span className="font-medium text-foreground">{currentBorrows}</span> / {maxBorrowsPerPeriod}
+                </p>
+                <div className="w-48 h-2 bg-secondary rounded-full mt-2">
+                  <div
+                    className={`h-2 rounded-full transition-all ${hasReachedBorrowLimit ? "bg-destructive" : "bg-primary"}`}
+                    style={{
+                      width: `${(currentBorrows / maxBorrowsPerPeriod) * 100}%`,
+                    }}
+                  />
+                </div>
+                {hasReachedBorrowLimit && (
+                  <p className="text-xs text-destructive mt-2">
+                    You can only borrow {maxBorrowsPerPeriod} books per period.
+                  </p>
+                )}
+              </CardContent>
+            </Card>
+          )}
+
+          <Card className="border-border">
+            <CardContent className="p-4">
+              <h2 className="font-semibold mb-3 text-foreground">Borrow the book</h2>
+              <div className="flex items-center justify-between">
+                <div>
+                  {
+                    !hasReachedBorrowLimit ? <p className="text-sm text-muted-foreground">
+                      This book is currently available for borrowing.
+                    </p> : <p className="text-sm text-destructive">
+                      You have reached your borrowing limit. Please return a book.
+                    </p>
+                  }
+                </div>
+
+                {renderBorrowAction()}
+              </div>
+
+              {message && (
+                <div
+                  className={`message mt-4 p-3 rounded-lg text-sm ${message.type === "success" ? "bg-primary/10 text-primary" : "bg-destructive/10 text-destructive"
+                    }`}
+                >
+                  {message.text}
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  )
+}
