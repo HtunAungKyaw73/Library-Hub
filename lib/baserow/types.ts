@@ -45,10 +45,12 @@ export interface BaserowBook {
     order: string
     book_id?: string | null
     author_name?: string | LinkData[] | null
+    author_id?: string | null
     title: string
     language: string | null
     place_of_publication?: string | null
     publisher_name?: string | LinkData[] | null
+    publisher_id?: string | null
     year_of_publication?: number | null
     edition?: string | null  // Note: typo in original field name
     price?: number | null
@@ -57,6 +59,8 @@ export interface BaserowBook {
     notes?: string | null
     lost_damage?: string | null
     note?: string | null
+    author?: LinkData[] | null
+    publisher?: LinkData[] | null
 }
 
 /**
@@ -123,6 +127,7 @@ export interface Book {
     language: string | null
     author_id?: string | null
     publisher_name: string | null
+    publisher_id?: string | null
     place_of_publication: string | null
     published_year: number | null
     edition: string | null
@@ -176,8 +181,10 @@ export function mapBaserowBookToBook(book: BaserowBook): Book {
         book_id: book.book_id ?? null,
         title: book.title,
         author_name: authorName ?? null,
+        author_id: Array.isArray(book.author) && book.author.length > 0 ? book.author[0].value : null,
         language: book.language ?? null,
         publisher_name: Array.isArray(book.publisher_name) && book.publisher_name.length > 0 ? book.publisher_name[0].value : null,
+        publisher_id: Array.isArray(book.publisher) && book.publisher.length > 0 ? book.publisher[0].value : null,
         place_of_publication: book.place_of_publication ?? null,
         published_year: book.year_of_publication ?? null,
         edition: book.edition ?? null,

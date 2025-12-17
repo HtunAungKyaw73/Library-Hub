@@ -8,26 +8,23 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { BookOpen, Calendar, User, ArrowLeft, CheckCircle, AlertCircle, Ban } from "lucide-react"
 import { useAppSelector } from "@/lib/redux/hooks"
-import { selectIsAuthenticated, selectUser } from "@/lib/redux/slices/authSlice"
-import { useBorrowBookMutation, useGetBorrowedBooksQuery } from "@/lib/redux/services/baserowApi"
-import { Book } from "@/lib/baserow/types"
+import { selectIsAuthenticated } from "@/lib/redux/slices/authSlice"
+import { useBorrowBookMutation } from "@/lib/redux/services/baserowApi"
+import { Book, SessionUser } from "@/lib/baserow/types"
 
 export function BookDetails({
-  book
-}: { book: Book }) {
+  book,
+  hasBorrowed,
+  currentBorrows,
+  user
+}: { book: Book, hasBorrowed: boolean, currentBorrows: number, user: SessionUser | null }) {
 
   const router = useRouter()
 
   const isAuthenticated = useAppSelector(selectIsAuthenticated)
-  const user = useAppSelector(selectUser)
 
   const [borrowBook, { isLoading: isBorrowing }] = useBorrowBookMutation()
-  const { data: borrowedBooks } = useGetBorrowedBooksQuery(user?.user_id || "", {
-    skip: !user?.user_id
-  })
 
-  const hasBorrowed = borrowedBooks?.some(b => (b.book_id === book?.book_id) && (b.status === "borrowed"))
-  const currentBorrows = borrowedBooks?.filter(b => b.status === "borrowed").length || 0
   const maxBorrowsPerPeriod = +process.env.MAX_BORROWS_PER_PERIOD! || 2
 
   const [message, setMessage] = useState<{
@@ -148,7 +145,7 @@ export function BookDetails({
 
       <div className="grid md:grid-cols-3 gap-8">
         <div className="md:col-span-1">
-          <Card className="overflow-hidden border-border">
+          <Card className="overflow-hidden border-border hidden md:block">
             <div className="aspect-3/4 bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center">
               <BookOpen className="h-24 w-24 text-primary/40" />
             </div>
@@ -157,34 +154,26 @@ export function BookDetails({
 
         <div className="md:col-span-2 space-y-6">
           <div>
-            <h1 className="text-3xl font-bold text-foreground mb-4">{book.title}</h1>
-            <h3 className="text-lg font-semibold text-foreground flex items-center gap-2"><User className="h-5 w-5" />{book.author_name}</h3>
-            {/* {book.author && (
+            <h1 className="text-xl font-bold text-foreground mb-4 leading-8">{book.title}</h1>
+            {book.author_name && (
               <Link
-                href={`/authors/${book.author.id}`}
-                className="flex items-center gap-2 text-lg text-primary hover:underline"
+                href={`/authors/${book.author_id}`}
+                className="flex items-center gap-2 text-primary hover:underline"
               >
                 <User className="h-5 w-5" />
-                {book.author.name}
+                <p className="font-semibold text-foreground flex items-center gap-2">{book.author_name}</p>
               </Link>
-            )} */}
+            )}
           </div>
 
           <div className="flex flex-wrap gap-3">
             {book.published_year && (
-              <Badge variant="outline" className="text-sm">
-                <Calendar className="h-3.5 w-3.5 mr-1.5" />
+              <Badge variant="outline" className="text-sm p-2">
+                <Calendar className="h-4 w-4 mr-1.5" />
                 {book.published_year}
               </Badge>
             )}
           </div>
-
-          <Card className="border-border">
-            <CardContent className="p-4">
-              <h2 className="font-semibold mb-2 text-foreground">Description</h2>
-              <p className="text-muted-foreground leading-relaxed">{book.notes || "No description available."}</p>
-            </CardContent>
-          </Card>
 
           {isAuthenticated && (
             <Card className="border-border">
@@ -240,6 +229,12 @@ export function BookDetails({
                   {message.text}
                 </div>
               )}
+            </CardContent>
+          </Card>
+          <Card className="border-border">
+            <CardContent className="p-4">
+              <h2 className="font-semibold mb-2 text-foreground">Description</h2>
+              <p className="text-muted-foreground leading-relaxed">{book.notes || "No description available."}</p>
             </CardContent>
           </Card>
         </div>

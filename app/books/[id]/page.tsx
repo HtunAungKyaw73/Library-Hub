@@ -1,8 +1,10 @@
 'use client'
 import { BookDetails } from "@/components/book-details"
-import { useGetBookByIdQuery } from "@/lib/redux/services/baserowApi"
+import { useGetBookByIdQuery, useGetBorrowedBooksQuery } from "@/lib/redux/services/baserowApi"
 import { notFound, useParams } from "next/navigation"
 import BooksLoading from "../loading"
+import { useAppSelector } from "@/lib/redux/hooks"
+import { selectUser } from "@/lib/redux/slices/authSlice"
 
 export default function BookPage() {
   const { id } = useParams<{ id: string }>()
@@ -10,6 +12,14 @@ export default function BookPage() {
   const { data: book, isLoading, isError } = useGetBookByIdQuery(id, {
     skip: !id
   })
+  const user = useAppSelector(selectUser)
+
+  const { data: borrowedBooks } = useGetBorrowedBooksQuery(user?.user_id || "", {
+    skip: !user?.user_id
+  })
+
+  const hasBorrowed = borrowedBooks?.some(b => (b.book_id === book?.book_id) && (b.status === "borrowed"))
+  const currentBorrows = borrowedBooks?.filter(b => b.status === "borrowed").length || 0
 
   if (isLoading) {
     return (
@@ -32,6 +42,9 @@ export default function BookPage() {
   return (
     <BookDetails
       book={book}
+      hasBorrowed={hasBorrowed || false}
+      currentBorrows={currentBorrows}
+      user={user}
     />
   )
 }

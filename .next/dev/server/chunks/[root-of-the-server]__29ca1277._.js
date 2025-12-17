@@ -72,8 +72,10 @@ function mapBaserowBookToBook(book) {
         book_id: book.book_id ?? null,
         title: book.title,
         author_name: authorName ?? null,
+        author_id: Array.isArray(book.author) && book.author.length > 0 ? book.author[0].value : null,
         language: book.language ?? null,
         publisher_name: Array.isArray(book.publisher_name) && book.publisher_name.length > 0 ? book.publisher_name[0].value : null,
+        publisher_id: Array.isArray(book.publisher) && book.publisher.length > 0 ? book.publisher[0].value : null,
         place_of_publication: book.place_of_publication ?? null,
         published_year: book.year_of_publication ?? null,
         edition: book.edition ?? null,
@@ -278,6 +280,7 @@ async function GET() {
         const books = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$baserow$2f$client$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getBooks"])();
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(books);
     } catch (error) {
+        console.error("Get Books API error:", error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             error: error?.toString()
         }, {
