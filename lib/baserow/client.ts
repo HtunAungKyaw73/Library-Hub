@@ -10,6 +10,8 @@ import {
     mapBaserowBorrowedBook,
     Book,
     BorrowedBook,
+    SessionUser,
+    mapBaserowUserToSessionUser,
 } from "./types"
 
 import * as bcrypt from "bcryptjs";
@@ -228,10 +230,10 @@ export async function updateBorrowRecord(
 export async function createUser(data: {
     email: string
     password: string
-    username?: string
-}): Promise<BaserowUser | null> {
+    username: string
+}): Promise<SessionUser | null> {
 
-    const hashedPassword = await bcrypt.hash(data.password, 10);
+    const hashedPassword = await bcrypt.hash(data.password, 15);
 
     try {
         const response = await baserowFetch<BaserowUser>(
@@ -241,12 +243,12 @@ export async function createUser(data: {
                 body: JSON.stringify({
                     email: data.email,
                     password: hashedPassword,
-                    username: data.username || null,
+                    username: data.username,
                     is_admin: false,
                 }),
             }
         )
-        return response
+        return mapBaserowUserToSessionUser(response)
     } catch {
         return null
     }

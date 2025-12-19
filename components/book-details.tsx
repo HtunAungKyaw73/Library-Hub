@@ -122,7 +122,7 @@ export function BookDetails({
 
     if (book?.book_id && !isBookBorrowed) {
       return (
-        <Button variant="secondary" className="hover:bg-secondary" onClick={handleBorrow} disabled={isBorrowing}>
+        <Button variant="secondary" className="hover:bg-primary" onClick={handleBorrow} disabled={isBorrowing}>
           {isBorrowing ? "Borrowing..." : "Borrow"}
         </Button>
       )

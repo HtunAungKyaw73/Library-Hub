@@ -97,6 +97,7 @@
     --color-red-200: #ffcaca;
     --color-red-300: #ffa3a3;
     --color-red-400: #ff6568;
+    --color-red-500: #fb2c36;
     --color-red-600: #e40014;
     --color-red-800: #9f0712;
     --color-red-900: #82181a;
@@ -106,12 +107,17 @@
     --color-amber-600: #dd7400;
     --color-amber-800: #953d00;
     --color-amber-900: #7b3306;
+    --color-yellow-600: #cd8900;
+    --color-green-500: #00c758;
+    --color-green-600: #00a544;
     --color-emerald-100: #d0fae5;
     --color-emerald-200: #a4f4cf;
     --color-emerald-500: #00bb7f;
     --color-emerald-600: #009767;
     --color-emerald-800: #005f46;
     --color-emerald-900: #004e3b;
+    --color-blue-600: #155dfc;
+    --color-purple-500: #ac4bff;
     --color-pink-600: #e30076;
     --color-pink-700: #c4005c;
     --color-black: #000;
@@ -173,6 +179,7 @@
       --color-red-200: lab(86.017% 19.8815 7.75869);
       --color-red-300: lab(76.5514% 36.422 15.5335);
       --color-red-400: lab(63.7053% 60.745 31.3109);
+      --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
       --color-red-800: lab(33.7174% 55.8993 41.0293);
       --color-red-900: lab(28.5139% 44.5539 29.0463);
@@ -182,12 +189,17 @@
       --color-amber-600: lab(60.3514% 40.5624 87.1228);
       --color-amber-800: lab(37.8822% 37.1699 52.2718);
       --color-amber-900: lab(31.2288% 30.2627 40.0378);
+      --color-yellow-600: lab(62.7799% 22.4197 86.1544);
+      --color-green-500: lab(70.5521% -66.5147 45.8073);
+      --color-green-600: lab(59.0978% -58.6621 41.2579);
       --color-emerald-100: lab(94.9004% -17.0769 5.63836);
       --color-emerald-200: lab(90.2247% -31.039 9.47084);
       --color-emerald-500: lab(66.9756% -58.27 19.5419);
       --color-emerald-600: lab(55.0481% -49.9246 15.93);
       --color-emerald-800: lab(35.3675% -33.1188 8.04002);
       --color-emerald-900: lab(28.8637% -26.9249 5.45986);
+      --color-blue-600: lab(44.0605% 29.0279 -86.0352);
+      --color-purple-500: lab(52.0183% 66.11 -78.2316);
       --color-pink-600: lab(49.5493% 79.8381 2.31768);
       --color-pink-700: lab(42.1737% 71.8009 7.42233);
     }
@@ -2391,6 +2403,10 @@
     color: var(--color-black);
   }
 
+  .text-blue-600 {
+    color: var(--color-blue-600);
+  }
+
   .text-card-foreground {
     color: var(--card-foreground);
   }
@@ -2431,6 +2447,14 @@
     .text-foreground\/50 {
       color: color-mix(in oklab, var(--foreground) 50%, transparent);
     }
+  }
+
+  .text-green-500 {
+    color: var(--color-green-500);
+  }
+
+  .text-green-600 {
+    color: var(--color-green-600);
   }
 
   .text-muted-foreground {
@@ -2487,6 +2511,18 @@
     }
   }
 
+  .text-purple-500 {
+    color: var(--color-purple-500);
+  }
+
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
+
+  .text-red-600 {
+    color: var(--color-red-600);
+  }
+
   .text-red-800 {
     color: var(--color-red-800);
   }
@@ -2511,6 +2547,10 @@
 
   .text-white {
     color: var(--color-white);
+  }
+
+  .text-yellow-600 {
+    color: var(--color-yellow-600);
   }
 
   .tabular-nums {
@@ -3207,6 +3247,12 @@
       .hover\:bg-muted\/50:hover {
         background-color: color-mix(in oklab, var(--muted) 50%, transparent);
       }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-primary:hover {
+      background-color: var(--primary);
     }
   }
 

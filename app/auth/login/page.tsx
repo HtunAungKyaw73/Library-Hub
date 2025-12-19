@@ -6,7 +6,8 @@ import Link from "next/link"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
-import { Library, Loader2, ArrowLeft } from "lucide-react"
+import { Library, Loader2 } from "lucide-react"
+import { toast } from "sonner"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -18,8 +19,8 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  password: z.string().min(1, {
-    message: "Password is required.",
+  password: z.string().min(8, {
+    message: "Password must be at least 8 characters long.",
   }),
 })
 
@@ -39,18 +40,22 @@ export default function LoginPage() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setError(null)
 
-    try {
-      await login({
-        email: values.email,
-        password: values.password,
-      }).unwrap()
-
+    login({
+      email: values.email,
+      password: values.password,
+    }).unwrap().then((data) => {
+      toast.success("Login successful!", {
+        classNames: {
+          icon: 'text-green-500',
+        }
+      })
       router.push("/")
       router.refresh()
-    } catch (err: any) {
-      const errorMessage = err.data?.error || "Invalid email or password"
-      setError(errorMessage)
-    }
+    }, (error) => {
+      toast.error(error.data.error)
+      setError(error.data.error)
+    })
+
   }
 
   return (

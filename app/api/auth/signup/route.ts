@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
 import { createUser, getUserByEmail } from "@/lib/baserow/client"
+import { setSession } from "@/lib/baserow/auth"
 
 export async function POST(request: Request) {
     try {
@@ -34,8 +35,11 @@ export async function POST(request: Request) {
                 { status: 500 }
             )
         }
+        else {
+            await setSession(user)
+            return NextResponse.json({ success: true, user })
+        }
 
-        return NextResponse.json({ success: true, user })
     } catch (error) {
         console.error("Sign-up API error:", error)
         return NextResponse.json(

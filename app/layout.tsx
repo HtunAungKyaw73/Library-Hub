@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Manrope, Roboto_Mono } from "next/font/google"
+import { Toaster } from "@/components/ui/sonner"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Header } from "@/components/header"
@@ -55,6 +56,7 @@ export default async function RootLayout({
           <Header />
           <main>{children}</main>
           <Analytics />
+          <Toaster position="top-center" />
         </ReduxProvider>
       </body>
     </html>

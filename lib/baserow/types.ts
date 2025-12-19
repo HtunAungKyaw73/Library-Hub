@@ -1,4 +1,12 @@
-// Baserow API Types
+// API Types
+/**
+ * API Response wrapper
+ */
+export interface ApiResponse<T> {
+    success: boolean
+    user: T
+    error?: string
+}
 
 /**
  * Generic Baserow list response wrapper
@@ -196,13 +204,13 @@ export function mapBaserowBookToBook(book: BaserowBook): Book {
     }
 }
 
-export function mapBaserowUserToProfile(user: BaserowUser): UserProfile {
+export function mapBaserowUserToSessionUser(user: BaserowUser): SessionUser {
     return {
         id: user.id,
         user_id: user.user_id ?? null,
         username: user.username ?? null,
         email: user.email,
-        is_admin: user.is_admin,
+        isAdmin: user.is_admin,
     }
 }
 

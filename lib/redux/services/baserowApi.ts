@@ -6,6 +6,7 @@ import {
     SessionUser,
     BaserowAuthor,
     mapBaserowAuthorToAuthor,
+    ApiResponse,
 } from "../../baserow/types"
 import { setCredentials, logout } from "../slices/authSlice"
 
@@ -85,18 +86,35 @@ export const baserowApi = createApi({
         }),
 
         // Auth
-        login: builder.mutation<SessionUser, { email: string; password: string }>({
+        login: builder.mutation<ApiResponse<SessionUser>, { email: string; password: string }>({
             query: (credentials) => ({
                 url: "api/auth/login",
                 method: "POST",
                 body: credentials,
             }),
-            transformResponse: (response: { success: boolean; user: SessionUser }) => response.user,
+            // transformResponse: (response: { success: boolean; user: SessionUser }) => response.user,
             // Use onQueryStarted to dispatch setCredentials
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
                     const { data } = await queryFulfilled
-                    dispatch(setCredentials({ user: data }))
+                    dispatch(setCredentials({ user: data.user }))
+                } catch (err) {
+                    // Login failed
+                }
+            },
+        }),
+        signUp: builder.mutation<ApiResponse<SessionUser>, { username: string; email: string; password: string }>({
+            query: (credentials) => ({
+                url: "api/auth/signup",
+                method: "POST",
+                body: credentials,
+            }),
+            // transformResponse: (response: { success: boolean; user: SessionUser }) => response.user,
+            // Use onQueryStarted to dispatch setCredentials
+            async onQueryStarted(arg, { dispatch, queryFulfilled }) {
+                try {
+                    const { data } = await queryFulfilled
+                    dispatch(setCredentials({ user: data.user }))
                 } catch (err) {
                     // Login failed
                 }
@@ -128,4 +146,5 @@ export const {
     useGetAllBooksByStatusQuery,
     useLoginMutation,
     useLogoutMutation,
+    useSignUpMutation,
 } = baserowApi

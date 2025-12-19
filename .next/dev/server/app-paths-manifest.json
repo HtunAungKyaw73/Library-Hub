@@ -1,6 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/analytics/page": "app/analytics/page.js",
   "/api/auth/login/route": "app/api/auth/login/route.js",
   "/api/auth/logout/route": "app/api/auth/logout/route.js",
   "/api/auth/signup/route": "app/api/auth/signup/route.js",
