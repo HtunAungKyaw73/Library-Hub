@@ -48,7 +48,6 @@ export default function LoginPage() {
       router.push("/")
       router.refresh()
     } catch (err: any) {
-      // RTK Query error format usually contains `data` property with the error response
       const errorMessage = err.data?.error || "Invalid email or password"
       setError(errorMessage)
     }

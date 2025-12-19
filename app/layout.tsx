@@ -50,6 +50,7 @@ export default async function RootLayout({
         />
       </head>
       <body className="font-manrope antialiased bg-background text-foreground">
+        {/* user={session} is to use session data in provider for next login; so the user dont have to login again after refresh*/}
         <ReduxProvider user={session}>
           <Header />
           <main>{children}</main>

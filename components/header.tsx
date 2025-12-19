@@ -1,13 +1,14 @@
+"use client"
 import Link from "next/link"
 import { BookOpen, Search, BarChart3, Library, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { getSession } from "@/lib/baserow/auth"
 import { SignOutButton } from "@/components/signout-button"
+import { useAppSelector } from "@/lib/redux/hooks"
+import { selectUser } from "@/lib/redux/slices/authSlice"
 
-export async function Header() {
-  const session = await getSession()
-  const user = session
-  const isAdmin = session?.isAdmin ?? false
+export function Header() {
+  const user = useAppSelector(selectUser)
+  const isAdmin = user?.isAdmin ?? false
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-card/95 backdrop-blur supports-backdrop-filter:bg-card/60">

@@ -25,6 +25,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.10_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$baserow$2f$types$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/baserow/types.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$bcrypt$40$6$2e$0$2e$0$2f$node_modules$2f$bcrypt$2f$bcrypt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/bcrypt@6.0.0/node_modules/bcrypt/bcrypt.js [app-client] (ecmascript)");
+;
 ;
 const BASEROW_API_URL = ("TURBOPACK compile-time value", "https://api.baserow.io") || "https://api.baserow.io";
 const BASEROW_API_TOKEN = ("TURBOPACK compile-time value", "4z2b3p6kYWxiDbSdAcKGkb1iQzSo7G5z") || "";
@@ -140,12 +142,13 @@ async function updateBorrowRecord(id, data) {
     }
 }
 async function createUser(data) {
+    const hashedPassword = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$bcrypt$40$6$2e$0$2e$0$2f$node_modules$2f$bcrypt$2f$bcrypt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["hash"](data.password, 10);
     try {
         const response = await baserowFetch(`${BASEROW_API_URL}/api/database/rows/table/${TABLE_USERS}/?user_field_names=true`, {
             method: "POST",
             body: JSON.stringify({
                 email: data.email,
-                password: data.password,
+                password: hashedPassword,
                 username: data.username || null,
                 is_admin: false
             })

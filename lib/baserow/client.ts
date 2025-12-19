@@ -12,6 +12,8 @@ import {
     BorrowedBook,
 } from "./types"
 
+import * as bcrypt from "bcryptjs";
+
 const BASEROW_API_URL = process.env.NEXT_PUBLIC_BASEROW_API_URL || "https://api.baserow.io"
 const BASEROW_API_TOKEN = process.env.NEXT_PUBLIC_BASEROW_API_TOKEN || ""
 
@@ -135,7 +137,7 @@ export async function getUserById(id: string): Promise<BaserowUser | null> {
 /**
  * Get borrowed books for a user
  */
-export async function getBorrowedBooks(userId: string): Promise<BorrowedBook[]> {
+export async function getBorrowedBooksByUserId(userId: string): Promise<BorrowedBook[]> {
     try {
         const response = await baserowFetch<BaserowListResponse<BaserowBorrowedBook>>(
             `${BASEROW_API_URL}/api/database/rows/table/${TABLE_BORROW_BOOKS}/?user_field_names=true&filter__user_id__link_row_contains=${userId}`
@@ -143,6 +145,28 @@ export async function getBorrowedBooks(userId: string): Promise<BorrowedBook[]> 
         return response.results.map(mapBaserowBorrowedBook)
     } catch {
         return []
+    }
+}
+
+export async function getAllBooksByStatus(status: string): Promise<BorrowedBook[]> {
+    try {
+        const response = await baserowFetch<BaserowListResponse<BaserowBorrowedBook>>(
+            `${BASEROW_API_URL}/api/database/rows/table/${TABLE_BORROW_BOOKS}/?user_field_names=true&filter__status__equal=${status}`
+        )
+        return response.results.map(mapBaserowBorrowedBook)
+    } catch {
+        return []
+    }
+}
+
+export async function isBookBorrowed(bookId: string): Promise<boolean> {
+    try {
+        const response = await baserowFetch<BaserowListResponse<BaserowBorrowedBook>>(
+            `${BASEROW_API_URL}/api/database/rows/table/${TABLE_BORROW_BOOKS}/?user_field_names=true&filter__book_id__link_row_contains=${bookId}&filter__status__equal=borrowed`
+        )
+        return response.results.length > 0
+    } catch {
+        return false
     }
 }
 
@@ -206,6 +230,9 @@ export async function createUser(data: {
     password: string
     username?: string
 }): Promise<BaserowUser | null> {
+
+    const hashedPassword = await bcrypt.hash(data.password, 10);
+
     try {
         const response = await baserowFetch<BaserowUser>(
             `${BASEROW_API_URL}/api/database/rows/table/${TABLE_USERS}/?user_field_names=true`,
@@ -213,7 +240,7 @@ export async function createUser(data: {
                 method: "POST",
                 body: JSON.stringify({
                     email: data.email,
-                    password: data.password, // Should be hashed before sending
+                    password: hashedPassword,
                     username: data.username || null,
                     is_admin: false,
                 }),

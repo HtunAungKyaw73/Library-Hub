@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation"
 import { getSession } from "@/lib/baserow/auth"
-import { getBorrowedBooks } from "@/lib/baserow/client"
+import { getBorrowedBooksByUserId } from "@/lib/baserow/client"
 import { MyBooksContent } from "@/components/my-books-content"
 import { LibraryCard } from "@/components/library-card"
 
@@ -11,7 +11,7 @@ export default async function MyBooksPage() {
     redirect("/auth/login")
   }
 
-  const borrowedBooks = await getBorrowedBooks(session.id)
+  const borrowedBooks = await getBorrowedBooksByUserId(session.user_id)
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -22,7 +22,7 @@ export default async function MyBooksPage() {
 
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
-          <MyBooksContent borrowedBooks={borrowedBooks || []} userId={String(session.id)} />
+          <MyBooksContent borrowedBooks={borrowedBooks || []} userId={String(session.user_id)} />
         </div>
         <div className="lg:col-span-1">
           <LibraryCard

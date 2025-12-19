@@ -401,6 +401,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$baserow$2f$client$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/baserow/client.ts [app-rsc] (ecmascript)");
 ;
 ;
+// import bcrypt from "bcrypt";
 const SESSION_COOKIE_NAME = "library_session";
 const SESSION_MAX_AGE = 60 * 60 * 24 * 7 // 7 days
 ;

@@ -59,10 +59,26 @@ export const baserowApi = createApi({
                 { type: "BorrowedBook", id: "LIST" },
             ],
         }),
-        getBorrowedBooks: builder.query<BorrowedBook[], string>({
+        getBorrowedBooksByUserId: builder.query<BorrowedBook[], string>({
             queryFn: async (userId) => {
-                const { getBorrowedBooks } = await import("../../baserow/client")
-                const data = await getBorrowedBooks(userId)
+                const { getBorrowedBooksByUserId } = await import("../../baserow/client")
+                const data = await getBorrowedBooksByUserId(userId)
+                return { data }
+            },
+            providesTags: [{ type: "BorrowedBook", id: "LIST" }],
+        }),
+        getAllBooksByStatus: builder.query<BorrowedBook[], string>({
+            queryFn: async (status) => {
+                const { getAllBooksByStatus } = await import("../../baserow/client")
+                const data = await getAllBooksByStatus(status)
+                return { data }
+            },
+            providesTags: [{ type: "BorrowedBook", id: "LIST" }],
+        }),
+        isBookBorrowed: builder.query<boolean, string>({
+            queryFn: async (bookId) => {
+                const { isBookBorrowed } = await import("../../baserow/client")
+                const data = await isBookBorrowed(bookId)
                 return { data }
             },
             providesTags: [{ type: "BorrowedBook", id: "LIST" }],
@@ -95,8 +111,6 @@ export const baserowApi = createApi({
                 try {
                     await queryFulfilled
                     dispatch(logout())
-                    // Ideally we also clear cache?
-                    dispatch(baserowApi.util.resetApiState())
                 } catch (err) { }
             },
         }),
@@ -109,7 +123,9 @@ export const {
     useGetAuthorsQuery,
     useBorrowBookMutation,
     useReturnBookMutation,
-    useGetBorrowedBooksQuery,
+    useGetBorrowedBooksByUserIdQuery,
+    useIsBookBorrowedQuery,
+    useGetAllBooksByStatusQuery,
     useLoginMutation,
     useLogoutMutation,
 } = baserowApi

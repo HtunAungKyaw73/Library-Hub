@@ -1,8 +1,9 @@
 // Baserow Authentication Module
 
 import { cookies } from "next/headers"
-import { SessionUser, BaserowUser } from "./types"
+import { SessionUser } from "./types"
 import { getUserByEmail, getUserById } from "./client"
+import * as bcrypt from "bcryptjs";
 
 const SESSION_COOKIE_NAME = "library_session"
 const SESSION_MAX_AGE = 60 * 60 * 24 * 7 // 7 days
@@ -11,10 +12,8 @@ const SESSION_MAX_AGE = 60 * 60 * 24 * 7 // 7 days
  * Simple password comparison (for demo purposes)
  * In production, use bcrypt or similar
  */
-function verifyPassword(inputPassword: string, storedPassword: string): boolean {
-    // For demo: direct comparison
-    // TODO: Replace with proper password hashing (bcrypt)
-    return inputPassword === storedPassword
+async function verifyPassword(inputPassword: string, storedPassword: string): Promise<boolean> {
+    return await bcrypt.compare(inputPassword, storedPassword)
 }
 
 /**
@@ -31,8 +30,8 @@ export async function login(
             return { success: false, error: "User not found" }
         }
 
-        const storedPassword = String(user.password || "")
-        if (!verifyPassword(password.trim(), storedPassword.trim())) {
+        const storedPassword = user.password || ""
+        if (!await verifyPassword(password.trim(), storedPassword.trim())) {
             return { success: false, error: "Invalid password" }
         }
 
@@ -43,7 +42,6 @@ export async function login(
             username: user.username,
             isAdmin: user.is_admin || false,
         }
-
         return { success: true, user: sessionUser }
     } catch (error) {
         console.error("Login error:", error)

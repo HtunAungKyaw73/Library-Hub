@@ -10,14 +10,16 @@ import { BookOpen, Calendar, User, ArrowLeft, CheckCircle, AlertCircle, Ban } fr
 import { useAppSelector } from "@/lib/redux/hooks"
 import { selectIsAuthenticated } from "@/lib/redux/slices/authSlice"
 import { useBorrowBookMutation } from "@/lib/redux/services/baserowApi"
-import { Book, SessionUser } from "@/lib/baserow/types"
+import { Book, BorrowedBook, SessionUser } from "@/lib/baserow/types"
 
 export function BookDetails({
   book,
+  borrowedBook,
   hasBorrowed,
-  currentBorrows,
+  currentBorrowedByUser,
+  isBookBorrowed,
   user
-}: { book: Book, hasBorrowed: boolean, currentBorrows: number, user: SessionUser | null }) {
+}: { book: Book | undefined, borrowedBook?: BorrowedBook, hasBorrowed: boolean, currentBorrowedByUser: number, isBookBorrowed: boolean, user: SessionUser | null }) {
 
   const router = useRouter()
 
@@ -32,7 +34,7 @@ export function BookDetails({
     text: string
   } | null>(null)
 
-  const hasReachedBorrowLimit = currentBorrows >= maxBorrowsPerPeriod
+  const hasReachedBorrowLimit = currentBorrowedByUser >= maxBorrowsPerPeriod
 
   const handleBorrow = async () => {
     if (!isAuthenticated || !user) {
@@ -58,10 +60,10 @@ export function BookDetails({
 
     setMessage(null)
 
-    if (!book.book_id || !user?.user_id) {
+    if (!book?.book_id || !user?.user_id) {
       setMessage({
         type: "error",
-        text: `Missing info. BookID: ${book.book_id}, UserID: ${user.id}`
+        text: `Missing info. BookID: ${book?.book_id}, UserID: ${user?.id}`
       })
       return
     }
@@ -91,7 +93,7 @@ export function BookDetails({
       )
     }
 
-    if (hasBorrowed) {
+    if (hasBorrowed || isBookBorrowed) {
       return (
         <div className="flex items-center gap-1">
           <Badge variant="outline" className="text-primary border-primary cursor-not-allowed">
@@ -118,7 +120,7 @@ export function BookDetails({
       )
     }
 
-    if (book.book_id) {
+    if (book?.book_id && !isBookBorrowed) {
       return (
         <Button variant="secondary" className="hover:bg-secondary" onClick={handleBorrow} disabled={isBorrowing}>
           {isBorrowing ? "Borrowing..." : "Borrow"}
@@ -154,8 +156,8 @@ export function BookDetails({
 
         <div className="md:col-span-2 space-y-6">
           <div>
-            <h1 className="text-xl font-bold text-foreground mb-4 leading-8">{book.title}</h1>
-            {book.author_name && (
+            <h1 className="text-xl font-bold text-foreground mb-4 leading-8">{book?.title}</h1>
+            {book?.author_name && (
               <Link
                 href={`/authors/${book.author_id}`}
                 className="flex items-center gap-2 text-primary hover:underline"
@@ -167,10 +169,10 @@ export function BookDetails({
           </div>
 
           <div className="flex flex-wrap gap-3">
-            {book.published_year && (
+            {book?.published_year && (
               <Badge variant="outline" className="text-sm p-2">
                 <Calendar className="h-4 w-4 mr-1.5" />
-                {book.published_year}
+                {book?.published_year}
               </Badge>
             )}
           </div>
@@ -181,13 +183,13 @@ export function BookDetails({
                 <h2 className="font-semibold mb-2 text-foreground">Your Borrowing Status</h2>
                 <p className="text-sm text-muted-foreground">
                   Books borrowed:{" "}
-                  <span className="font-medium text-foreground">{currentBorrows}</span> / {maxBorrowsPerPeriod}
+                  <span className="font-medium text-foreground">{currentBorrowedByUser}</span> / {maxBorrowsPerPeriod}
                 </p>
                 <div className="w-48 h-2 bg-secondary rounded-full mt-2">
                   <div
                     className={`h-2 rounded-full transition-all ${hasReachedBorrowLimit ? "bg-destructive" : "bg-primary"}`}
                     style={{
-                      width: `${(currentBorrows / maxBorrowsPerPeriod) * 100}%`,
+                      width: `${(currentBorrowedByUser / maxBorrowsPerPeriod) * 100}%`,
                     }}
                   />
                 </div>
@@ -205,11 +207,19 @@ export function BookDetails({
               <h2 className="font-semibold mb-3 text-foreground">Borrow the book</h2>
               <div className="flex items-center justify-between">
                 <div>
-                  {hasBorrowed && <p className="text-sm text-muted-foreground">
-                    This book is currently borrowed.
-                  </p>}
+                  {
+                    (hasBorrowed && borrowedBook?.user_id === user?.user_id) && <p className="text-sm text-muted-foreground">
+                      This book is currently borrowed by you.
+                    </p>
+                  }
 
-                  {(!hasReachedBorrowLimit && !hasBorrowed) && <p className="text-sm text-muted-foreground">
+                  {
+                    (isBookBorrowed && borrowedBook?.user_id !== user?.user_id) && <p className="text-sm text-muted-foreground">
+                      This book is currently borrowed by other user.
+                    </p>
+                  }
+
+                  {(!hasReachedBorrowLimit && !hasBorrowed && !isBookBorrowed) && <p className="text-sm text-muted-foreground">
                     This book is currently available for borrowing.
                   </p>}
 
@@ -234,7 +244,7 @@ export function BookDetails({
           <Card className="border-border">
             <CardContent className="p-4">
               <h2 className="font-semibold mb-2 text-foreground">Description</h2>
-              <p className="text-muted-foreground leading-relaxed">{book.notes || "No description available."}</p>
+              <p className="text-muted-foreground leading-relaxed">{book?.notes || "No description available."}</p>
             </CardContent>
           </Card>
         </div>

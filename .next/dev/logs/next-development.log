@@ -1,81 +1,286 @@
-[00:00:02.135] Server  LOG      ✓ Ready in 1723ms
-[00:00:09.120] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:09.120] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:09.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765985579229}
-[00:01:24.796] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765985655807}
-[00:01:32.697] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
-[00:03:19.450] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B1519 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B1519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765985770455}
-[00:03:34.203] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765985785206}
-[00:07:58.522] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986049546}
-[00:08:22.007] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/analytics color: rgb(120, 120, 120) color: inherit {"dp":"/analytics","o":"http://localhost:3000/analytics","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986072986}
-[00:08:56.425] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986107329}
-[00:10:00.246] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0367 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0367","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986171114}
-[00:12:28.417] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986319341}
-[00:16:14.186] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986545193}
-[00:21:16.111] Server  LOG      ✓ Compiled in 645ms
-[00:21:16.671] Server  LOG      ✓ Compiled in 354ms
-[00:21:41.452] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986872438}
-[00:21:53.354] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986884350}
-[00:21:59.851] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986890756}
-[00:22:02.239] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0005 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0005","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986893234}
-[00:22:07.618] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986898540}
-[00:22:10.556] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0021 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0021","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986901551}
-[00:22:13.304] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986904215}
-[00:23:06.462] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765986957409}
-[00:35:22.269] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765987693224}
-[00:35:42.803] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765987713766}
-[00:37:20.308] Server  LOG      ✓ Compiled in 1790ms
-[00:37:28.843] Server  LOG      ✓ Compiled in 128ms
-[00:39:05.486] Server  LOG      ✓ Compiled in 730ms
-[00:39:18.350] Server  LOG      ✓ Compiled in 239ms
-[00:39:23.404] Server  LOG      ✓ Compiled in 233ms
-[00:39:27.002] Server  LOG      ✓ Compiled in 259ms
-[00:39:37.710] Server  LOG      ✓ Compiled in 261ms
-[00:39:43.652] Server  LOG      ✓ Compiled in 195ms
-[00:39:48.325] Server  LOG      ✓ Compiled in 218ms
-[00:39:54.435] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765987965372}
-[00:40:07.407] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0021 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0021","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765987978379}
-[00:40:13.024] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765987983922}
-[00:40:23.199] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B1519 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B1519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765987994171}
-[00:40:29.238] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988000132}
-[00:41:46.784] Server  LOG      ✓ Compiled in 94ms
-[00:41:50.048] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988081013}
-[00:44:07.555] Server  LOG      ✓ Compiled in 973ms
-[00:44:25.335] Browser ERROR   ./components/book-details.tsx:164:118
-Parsing ecmascript source code failed
-  162 |               >
-  163 |                 <User className="h-5 w-5" />
-> 164 |                 <h4 className="text-lg font-semibold text-foreground flex items-center gap-2">{book.author_name}</h3>
-      |                                                                                                                      ^
-> 165 |               </Link>
-      | ^^^^^^^^^^^^^^^
-  166 |             )}
-  167 |           </div>
-  168 |
+[00:00:01.196] Server  LOG      ✓ Ready in 849ms
+[00:00:07.229] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.229] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:07.229] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130790844}
+[00:00:15.241] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130798848}
+[00:00:22.178] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[00:00:26.697] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130810305}
+[00:00:46.020] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:46.020] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:00:46.020] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130829633}
+[00:01:15.480] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130859093}
+[00:01:32.485] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130876092}
+[00:01:38.849] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[00:01:49.951] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130893559}
+[00:01:59.434] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130902753}
+[00:02:02.026] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130905634}
+[00:02:03.729] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130907067}
+[00:02:04.963] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130908567}
+[00:02:13.723] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130917328}
+[00:02:17.097] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130920408}
+[00:02:32.452] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130936053}
+[00:03:13.646] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-Expected '</', got 'jsx text (
-              )'
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-Import traces:
-  Client Component Browser:
-    ./components/book-details.tsx [Client Component Browser]
-    ./app/books/[id]/page.tsx [Client Component Browser]
-    ./app/books/[id]/page.tsx [Server Component]
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-  Client Component SSR:
-    ./components/book-details.tsx [Client Component SSR]
-    ./app/books/[id]/page.tsx [Client Component SSR]
-    ./app/books/[id]/page.tsx [Server Component]
-[00:44:29.586] Server  LOG      ✓ Compiled in 107ms
-[00:44:39.277] Server  LOG      ✓ Compiled in 117ms
-[00:44:44.045] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:44:44.045] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0001","route":"/books/[id]"}
-[00:44:44.045] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988255008}
-[00:47:44.934] Server  LOG      ✓ Compiled in 413ms
-[00:47:57.428] Server  LOG      ✓ Compiled in 89ms
-[00:48:46.979] Server  LOG      ✓ Compiled in 100ms
-[00:49:35.121] Server  LOG      ✓ Compiled in 171ms
-[00:49:42.403] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/auth/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="font-manrope antialiased bg-background text-foreground"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:03:13.646] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:13.646] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:03:13.646] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130977213}
+[00:03:27.545] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130991149}
+[00:03:34.761] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766130998365}
+[00:03:43.194] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[00:03:47.388] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131010985}
+[00:04:50.413] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131074013}
+[00:04:54.296] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131077889}
+[00:05:09.702] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131093302}
+[00:05:23.290] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/analytics color: rgb(120, 120, 120) color: inherit {"dp":"/analytics","o":"http://localhost:3000/analytics","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131106760}
+[00:05:27.829] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131111419}
+[00:06:11.775] Server  LOG      ✓ Compiled in 138ms
+[00:06:31.329] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131174926}
+[00:06:34.050] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131177640}
+[00:06:50.391] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131193978}
+[00:06:59.026] Server  LOG      ✓ Compiled in 113ms
+[00:07:03.133] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:03.133] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:07:03.133] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131206725}
+[00:07:12.403] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131215995}
+[00:07:15.002] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131218595}
+[00:07:22.762] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[00:07:24.179] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131227764}
+[00:07:37.118] Server  LOG      ✓ Compiled in 150ms
+[00:07:57.876] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/auth/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="font-manrope antialiased bg-background text-foreground"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:07:57.876] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:57.876] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:07:57.876] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131261465}
+[00:08:04.925] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:04.925] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:08:04.925] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131268515}
+[00:08:15.116] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131278706}
+[00:08:23.471] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131287052}
+[00:08:38.902] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131302491}
+[00:09:10.867] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="font-manrope antialiased bg-background text-foreground"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:09:12.920] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:12.920] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:09:12.920] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131336508}
+[00:09:13.985] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131337561}
+[00:09:27.232] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131350818}
+[00:09:36.897] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766131360467}
+[00:14:09.973] Server  LOG      ✓ Compiled in 221ms
+[00:23:50.684] Server  LOG      ✓ Compiled in 225ms
+[00:24:29.283] Server  LOG     Login User: {}
+[00:24:29.286] Server  LOG     Stored Password: "henry1234"
+[00:24:29.287] Server  LOG     Input Password: "henry168349"
+[00:24:29.287] Server  LOG     Stored Password: "henry1234"
+[00:24:29.288] Server  LOG     Comparing Password
+[00:24:29.289] Server  LOG     Session User: {}
+[00:24:29.660] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132253376}
+[00:25:40.634] Server  LOG      ✓ Compiled in 143ms
+[00:26:15.422] Server  LOG      ✓ Compiled in 130ms
+[00:26:18.512] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132362206}
+[00:26:48.979] Server  LOG     Login User: {}
+[00:26:48.983] Server  LOG     Stored Password: "henry1234"
+[00:26:48.983] Server  LOG     Input Password: "hery1222222"
+[00:26:48.984] Server  LOG     Stored Password: "henry1234"
+[00:26:48.985] Server  LOG     Comparing Password
+[00:26:48.986] Server  LOG     Session User: {}
+[00:26:48.988] Server  LOG     Pwd Compare Result: false
+[00:26:49.257] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132392970}
+[00:29:00.339] Server  LOG      ✓ Compiled in 160ms
+[00:29:15.087] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132538785}
+[00:29:22.214] Server  LOG     Login User: null
+[00:29:37.197] Server  LOG     Login User: {}
+[00:29:37.198] Server  LOG     Stored Password: "henry1234"
+[00:29:37.198] Server  LOG     Input Password: "hdhsfedfsadfsa"
+[00:29:37.199] Server  LOG     Stored Password: "henry1234"
+[00:29:37.200] Server  LOG     Comparing Password
+[00:29:37.202] Server  LOG     Pwd Compare Result: false
+[00:29:56.447] Server  LOG     Login User: {}
+[00:29:56.448] Server  LOG     Stored Password: "henry1234"
+[00:29:56.448] Server  LOG     Input Password: "henry1234"
+[00:29:56.448] Server  LOG     Stored Password: "henry1234"
+[00:29:56.449] Server  LOG     Comparing Password
+[00:29:56.449] Server  LOG     Pwd Compare Result: false
+[00:30:03.194] Server  LOG     Login User: {}
+[00:30:03.195] Server  LOG     Stored Password: "henry1234"
+[00:30:03.195] Server  LOG     Input Password: "henry1234"
+[00:30:03.195] Server  LOG     Stored Password: "henry1234"
+[00:30:03.196] Server  LOG     Comparing Password
+[00:30:03.196] Server  LOG     Pwd Compare Result: false
+[00:31:27.412] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/auth/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="font-manrope antialiased bg-background text-foreground"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:31:27.412] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:31:27.412] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:31:27.412] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132671117}
+[00:31:45.548] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up","o":"http://localhost:3000/auth/sign-up","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132689253}
+[00:32:58.904] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up-success color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up-success","o":"http://localhost:3000/auth/sign-up-success","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132762595}
+[00:33:05.982] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132769671}
+[00:33:32.350] Server  LOG     Login User: {}
+[00:33:32.351] Server  LOG     Stored Password: "$2b$10$A/XQ87q6ttogX5bRQCsSZu.3F366fA/BJSBuEPRtSCgaw3BJDamkq"
+[00:33:32.352] Server  LOG     Input Password: "henry-htun-aung"
+[00:33:32.352] Server  LOG     Stored Password: "$2b$10$A/XQ87q6ttogX5bRQCsSZu.3F366fA/BJSBuEPRtSCgaw3BJDamkq"
+[00:33:32.352] Server  LOG     Comparing Password
+[00:33:32.474] Server  LOG     Pwd Compare Result: true
+[00:33:32.474] Server  LOG     Session User: {}
+[00:33:32.737] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766132796426}
+[00:38:28.207] Server  LOG      ✓ Compiled in 279ms
+[00:38:37.476] Server  LOG      ✓ Compiled in 130ms
+[00:38:50.838] Server  LOG      ✓ Compiled in 74ms
+[00:39:02.734] Server  LOG      ✓ Compiled in 83ms
+[00:43:01.438] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766133365079}
+[00:43:09.429] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[00:43:28.373] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766133392047}
+[01:08:25.179] Server  LOG      ✓ Compiled in 2.1s
+[01:08:32.170] Browser ERROR   %s is an async Client Component. Only Server Components can be async at the moment. This error is often caused by accidentally adding `'use client'` to a module that was originally written for the server. <Header>
+[01:08:32.170] Browser ERROR   A component was suspended by an uncached promise. Creating promises inside a Client Component or hook is not yet supported, except via a Suspense-compatible library or framework.
+[01:08:32.170] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -114,14 +319,51 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:49:42.403] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:49:42.403] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0001","route":"/books/[id]"}
-[00:49:42.403] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988553353}
-[00:49:48.556] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988559506}
-[00:50:13.074] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:50:13.074] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books","route":"/books"}
-[00:50:13.074] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988584018}
-[00:55:17.063] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[01:08:32.562] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:08:32.562] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0001","route":"/books/[id]"}
+[01:08:32.562] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766134896151}
+[01:08:36.295] Server  LOG      ✓ Compiled in 119ms
+[01:08:53.384] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766134916997}
+[01:10:21.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135005101}
+[01:10:30.326] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135013962}
+[01:11:00.644] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135044287}
+[01:12:00.026] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135103649}
+[01:12:06.763] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[01:12:10.699] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135114266}
+[01:12:46.840] Server  LOG      ✓ Compiled in 700ms
+[01:13:34.165] Server  LOG      ✓ Compiled in 194ms
+[01:16:23.190] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135366803}
+[01:16:26.388] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135370021}
+[01:17:10.946] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135414568}
+[01:17:13.249] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135416869}
+[01:17:16.448] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up","o":"http://localhost:3000/auth/sign-up","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135420073}
+[01:17:18.490] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135422122}
+[01:17:21.409] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up","o":"http://localhost:3000/auth/sign-up","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135425038}
+[01:17:41.860] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135445479}
+[01:17:43.099] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up","o":"http://localhost:3000/auth/sign-up","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135446729}
+[01:17:44.528] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135448160}
+[01:19:50.515] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135574149}
+[01:19:57.159] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135580803}
+[01:20:08.647] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:20:08.647] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:20:08.647] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135592279}
+[01:20:20.927] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:20:20.927] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:20:20.933] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135604561}
+[01:20:27.830] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:20:27.830] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:20:27.830] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135611474}
+[01:20:38.279] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135621859}
+[01:20:41.561] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:20:41.561] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[01:20:41.561] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135625201}
+[01:20:45.046] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:20:45.046] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[01:20:45.046] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135628691}
+[01:20:52.564] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135636203}
+[01:20:55.953] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135639587}
+[01:21:01.377] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135645020}
+[01:21:34.686] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -139,7 +381,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/books" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -160,10 +402,24 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:55:17.204] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:55:17.204] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books","route":"/books"}
-[00:55:17.204] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988888275}
-[00:56:06.545] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[01:21:34.686] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:21:34.686] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:21:34.686] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135678324}
+[01:21:47.541] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135691151}
+[01:21:51.324] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:21:51.324] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[01:21:51.324] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135694965}
+[01:22:36.440] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766135740062}
+[01:26:32.590] Server  LOG      ✓ Compiled in 573ms
+[01:26:55.022] Server  LOG      ✓ Compiled in 123ms
+[01:31:32.868] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136276326}
+[01:31:41.546] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[01:31:53.577] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136297202}
+[01:32:01.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136305106}
+[01:32:32.148] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136335766}
+[01:32:47.549] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136350814}
+[01:32:53.520] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136357135}
+[01:39:45.491] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -181,7 +437,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/books" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/authors/A..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -202,45 +458,450 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:56:06.640] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:56:06.640] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books","route":"/books"}
-[00:56:06.640] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765988937670}
-[00:56:15.129] Server  ERROR   Get Books API error: TypeError: Cannot read properties of undefined (reading 'value')
-[00:57:43.914] Server  LOG      ✓ Compiled in 496ms
-[00:57:50.390] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:57:50.390] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books","route":"/books"}
-[00:57:50.390] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989041462}
-[00:57:58.094] Browser WARN    SerializableStateInvariantMiddleware took 100ms, which is more than the warning threshold of 32ms. 
+[01:39:45.492] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:39:45.492] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/authors/A0001","route":"/authors/A0001"}
+[01:39:45.492] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/authors/A0001 color: rgb(120, 120, 120) color: inherit {"dp":"/authors/A0001","o":"http://localhost:3000/authors/A0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136769092}
+[01:39:50.484] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:39:50.486] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0001","route":"/books/[id]"}
+[01:39:50.486] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136774166}
+[01:41:46.387] Server  LOG      ✓ Compiled in 578ms
+[01:41:47.228] Server  LOG      ✓ Compiled in 380ms
+[01:41:47.382] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:47.467] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:48.959] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:49.258] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:49.678] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:49.982] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:50.700] Browser ERROR   uncaughtError: Error: ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[01:41:51.163] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:51.569] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getBorrowedBooksByUserId?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:41:58.617] Server  LOG      ✓ Compiled in 108ms
+[01:42:00.974] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:42:00.974] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0001","route":"/books/[id]"}
+[01:42:00.974] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766136904656}
+[01:44:03.817] Server  LOG      ✓ Compiled in 299ms
+[01:44:03.938] Browser ERROR   ./app/my-books/page.tsx:3:1
+Export getBorrowedBooks doesn't exist in target module
+  1 | import { redirect } from "next/navigation"
+  2 | import { getSession } from "@/lib/baserow/auth"
+> 3 | import { getBorrowedBooks } from "@/lib/baserow/client"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MyBooksContent } from "@/components/my-books-content"
+  5 | import { LibraryCard } from "@/components/library-card"
+  6 |
+
+The export getBorrowedBooks was not found in module [project]/lib/baserow/client.ts [app-rsc] (ecmascript).
+Did you mean to import getAllBorrowedBooks?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:48:06.678] Server  LOG      ✓ Compiled in 467ms
+[01:48:10.905] Server  LOG      ✓ Compiled in 4ms
+[01:48:20.037] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137283708}
+[01:48:47.975] Server  LOG      ✓ Compiled in 303ms
+[01:48:51.760] Server  LOG      ✓ Compiled in 103ms
+[01:49:00.323] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137323998}
+[01:49:07.469] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[01:49:23.283] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137346915}
+[01:49:30.569] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137354240}
+[01:49:32.849] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137356519}
+[01:49:59.978] Server  LOG      ✓ Compiled in 162ms
+[01:51:38.998] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137482665}
+[01:51:48.912] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/analytics color: rgb(120, 120, 120) color: inherit {"dp":"/analytics","o":"http://localhost:3000/analytics","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137492434}
+[01:51:50.264] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137493932}
+[01:52:08.350] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137512020}
+[01:53:19.718] Server  LOG      ✓ Compiled in 675ms
+[01:53:26.751] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137590336}
+[01:53:29.114] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766137592781}
+[01:54:42.408] Server  LOG      ✓ Compiled in 203ms
+[01:58:15.927] Server  LOG      ✓ Compiled in 486ms
+[01:58:18.625] Server  LOG      ✓ Compiled in 228ms
+[02:00:25.944] Server  LOG      ✓ Compiled in 314ms
+[02:02:12.530] Server  LOG      ✓ Compiled in 210ms
+[02:03:53.275] Server  LOG      ✓ Compiled in 866ms
+[02:03:53.487] Browser ERROR   uncaughtError: TypeError: (0 , __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$redux$2f$services$2f$baserowApi$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__.useGetBorrowedBooksQuery) is not a function
+[02:03:53.488] Browser ERROR   ./app/books/[id]/page.tsx:3:1
+Export useGetBorrowedBooksQuery doesn't exist in target module
+  1 | 'use client'
+  2 | import { BookDetails } from "@/components/book-details"
+> 3 | import { useGetBookByIdQuery, useGetBorrowedBooksQuery } from "@/lib/redux/services/baserowApi"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { notFound, useParams } from "next/navigation"
+  5 | import BooksLoading from "../loading"
+  6 | import { useAppSelector } from "@/lib/redux/hooks"
+
+The export useGetBorrowedBooksQuery was not found in module [project]/lib/redux/services/baserowApi.ts [app-client] (ecmascript).
+Did you mean to import useGetBorrowedBooksByUserIdQuery?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/books/[id]/page.tsx [Client Component Browser]
+    ./app/books/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/books/[id]/page.tsx [Client Component SSR]
+    ./app/books/[id]/page.tsx [Server Component]
+[02:03:53.488] Browser ERROR   ./app/books/[id]/page.tsx:3:1
+Export useGetBorrowedBooksQuery doesn't exist in target module
+  1 | 'use client'
+  2 | import { BookDetails } from "@/components/book-details"
+> 3 | import { useGetBookByIdQuery, useGetBorrowedBooksQuery } from "@/lib/redux/services/baserowApi"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { notFound, useParams } from "next/navigation"
+  5 | import BooksLoading from "../loading"
+  6 | import { useAppSelector } from "@/lib/redux/hooks"
+
+The export useGetBorrowedBooksQuery was not found in module [project]/lib/redux/services/baserowApi.ts [app-ssr] (ecmascript).
+Did you mean to import useGetBorrowedBooksByUserIdQuery?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/books/[id]/page.tsx [Client Component Browser]
+    ./app/books/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/books/[id]/page.tsx [Client Component SSR]
+    ./app/books/[id]/page.tsx [Server Component]
+[02:03:54.320] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:03:54.322] Server  LOG      ✓ Compiled in 802ms
+[02:03:54.649] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766138218158}
+[02:03:58.680] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/books/B0001" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="font-manrope antialiased bg-background text-foreground"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:03:58.778] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:03:58.778] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0001","route":"/books/[id]"}
+[02:03:58.778] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766138222434}
+[02:10:51.627] Server  LOG      ✓ Compiled in 516ms
+[02:10:52.644] Server  LOG      ✓ Compiled in 164ms
+[02:17:28.829] Server  LOG      ✓ Compiled in 133ms
+[02:18:49.288] Server  LOG      ✓ Compiled in 1199ms
+[02:20:16.481] Server  LOG      ✓ Compiled in 148ms
+[02:23:42.085] Server  LOG      ✓ Compiled in 278ms
+[02:28:42.268] Server  LOG      ✓ Compiled in 183ms
+[02:28:53.727] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:28:53.727] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0001","route":"/books/[id]"}
+[02:28:53.727] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766139717422}
+[02:29:43.971] Server  LOG      ✓ Compiled in 497ms
+[02:29:54.752] Server  LOG      ✓ Compiled in 100ms
+[02:30:02.739] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766139786418}
+[02:30:12.121] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[02:30:18.797] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766139802476}
+[02:31:47.118] Server  LOG      ✓ Compiled in 608ms
+[02:31:50.675] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766139894362}
+[02:32:02.394] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766139906079}
+[02:32:16.000] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766139919353}
+[02:32:17.378] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766139921071}
+[02:33:22.961] Server  LOG      ✓ Compiled in 302ms
+[02:33:24.011] Server  LOG      ✓ Compiled in 145ms
+[02:33:25.907] Server  LOG      ✓ Compiled in 199ms
+[02:37:48.582] Server  LOG      ✓ Compiled in 270ms
+[02:39:08.767] Server  LOG      ✓ Compiled in 133ms
+[02:39:13.190] Server  LOG      ✓ Compiled in 227ms
+[02:39:25.517] Server  LOG      ✓ Compiled in 87ms
+[02:41:20.326] Server  LOG      ✓ Compiled in 103ms
+[02:43:37.682] Server  LOG      ✓ Compiled in 177ms
+[02:43:42.442] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/authors/A..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="font-manrope antialiased bg-background text-foreground"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:43:42.442] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:43:42.442] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/authors/A0002","route":"/authors/A0002"}
+[02:43:42.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/authors/A0002 color: rgb(120, 120, 120) color: inherit {"dp":"/authors/A0002","o":"http://localhost:3000/authors/A0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140606065}
+[02:43:46.577] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:43:46.579] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0002","route":"/books/[id]"}
+[02:43:46.579] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140610199}
+[02:44:40.920] Server  LOG      ✓ Compiled in 153ms
+[02:44:44.193] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140667811}
+[02:44:50.961] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[02:44:54.760] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140678376}
+[02:45:38.173] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140721352}
+[02:45:40.104] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140723723}
+[02:45:42.196] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140725486}
+[02:45:43.191] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140726809}
+[02:45:46.646] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140729956}
+[02:45:47.611] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140731230}
+[02:45:50.018] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140733320}
+[02:45:51.740] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0003 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0003","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140735276}
+[02:45:56.350] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140739628}
+[02:45:58.036] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0004 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0004","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140741653}
+[02:46:47.616] Server  LOG      ✓ Compiled in 371ms
+[02:46:53.502] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140796599}
+[02:46:57.217] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0005 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0005","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140800809}
+[02:47:01.250] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140804514}
+[02:47:03.467] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0004 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0004","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140807083}
+[02:47:07.443] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140810744}
+[02:47:10.937] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:47:10.937] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books","route":"/books"}
+[02:47:10.937] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140814532}
+[02:47:18.043] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[02:47:22.648] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140826262}
+[02:48:14.641] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140877797}
+[02:48:15.740] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140879356}
+[02:48:17.353] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140880642}
+[02:48:18.520] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0003 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0003","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140882133}
+[02:48:24.547] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140887853}
+[02:48:26.172] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140889784}
+[02:48:30.235] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140893537}
+[02:48:33.244] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0004 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0004","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766140896844}
+[02:51:28.091] Server  LOG      ✓ Compiled in 427ms
+[02:51:33.714] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141077164}
+[02:51:46.313] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141089922}
+[02:51:56.103] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141099366}
+[02:51:57.693] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141101301}
+[02:52:09.375] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141112626}
+[02:52:19.729] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0003 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0003","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141123336}
+[02:52:32.141] Server  LOG      ✓ Compiled in 230ms
+[02:55:55.305] Server  LOG      ✓ Compiled in 677ms
+[02:56:00.497] Server  LOG      ✓ Compiled in 2ms
+[02:56:00.801] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141344256}
+[02:56:12.834] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141356439}
+[02:56:54.329] Server  LOG      ✓ Compiled in 179ms
+[03:04:07.230] Server  LOG      ✓ Compiled in 396ms
+[03:04:08.695] Server  LOG      ✓ Compiled in 116ms
+[03:04:17.705] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141841116}
+[03:04:20.786] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:04:20.787] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books","route":"/books"}
+[03:04:20.787] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141844190}
+[03:04:26.524] Browser WARN    SerializableStateInvariantMiddleware took 41ms, which is more than the warning threshold of 32ms. 
 If your state or actions are very large, you may want to disable the middleware as it might cause too much of a slowdown in development mode. See https://redux-toolkit.js.org/api/getDefaultMiddleware for instructions.
 It is disabled in production builds, so you don't need to worry about that.
-[00:57:58.094] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
-[00:58:13.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989064888}
-[00:58:16.604] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989067541}
-[00:58:47.021] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989098091}
-[00:58:57.539] Server  LOG      ○ Compiling /_not-found/page ...
-[00:58:58.547] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:58:58.547] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/authors/A0002","route":"/authors/A0002"}
-[00:58:58.548] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/authors/A0002 color: rgb(120, 120, 120) color: inherit {"dp":"/authors/A0002","o":"http://localhost:3000/authors/A0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989109618}
-[00:59:01.612] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:59:01.612] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0002","route":"/books/[id]"}
-[00:59:01.612] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989112685}
-[01:04:18.894] Server  LOG      ✓ Compiled in 2.6s
-[01:04:31.155] Server  LOG      ✓ Compiled in 386ms
-[01:04:40.697] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:04:40.697] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/books/B0002","route":"/books/[id]"}
-[01:04:40.697] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989451762}
-[01:05:00.173] Server  LOG      ✓ Compiled in 437ms
-[01:05:34.221] Server  LOG      ✓ Compiled in 130ms
-[01:05:53.623] Server  LOG      ✓ Compiled in 166ms
-[01:06:04.160] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989535222}
-[01:06:13.474] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
-[01:06:25.059] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989556121}
-[01:06:42.531] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989573522}
-[01:06:44.474] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989575536}
-[01:06:54.360] Server  LOG      ✓ Compiled in 134ms
-[01:07:04.438] Server  LOG      ✓ Compiled in 587ms
-[01:08:01.768] Server  LOG      ✓ Compiled in 239ms
-[01:08:21.007] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989672063}
-[01:08:33.334] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0030 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0030","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989684392}
-[01:08:40.788] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989691780}
-[01:10:42.647] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765989813699}
+[03:04:26.524] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
+[03:04:32.825] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141856450}
+[03:04:40.050] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141863338}
+[03:04:42.477] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141866099}
+[03:04:48.417] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141871734}
+[03:04:50.643] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0003 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0003","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141874215}
+[03:04:54.708] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141878020}
+[03:04:56.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0004 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0004","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141880404}
+[03:05:05.621] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141888926}
+[03:05:07.058] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141890683}
+[03:05:09.122] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141892455}
+[03:05:10.395] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141894019}
+[03:05:15.687] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141899039}
+[03:05:53.349] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0017 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0017","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141936925}
+[03:06:09.229] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141952515}
+[03:06:13.046] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0003 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0003","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141956666}
+[03:06:16.493] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766141959781}
+[03:08:17.146] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142080761}
+[03:08:20.730] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up","o":"http://localhost:3000/auth/sign-up","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142084351}
+[03:08:23.895] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142087507}
+[03:08:25.251] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142088876}
+[03:08:28.551] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142092165}
+[03:08:30.370] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142093993}
+[03:08:35.501] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142099109}
+[03:08:38.058] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142101679}
+[03:08:57.459] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142121074}
+[03:09:07.524] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142131137}
+[03:09:10.232] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142133418}
+[03:09:12.204] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142135815}
+[03:09:20.979] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142144593}
+[03:09:33.065] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142156687}
+[03:09:37.041] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142160328}
+[03:09:38.394] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142162015}
+[03:09:47.483] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142170784}
+[03:09:48.562] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142172182}
+[03:09:55.725] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142179244}
+[03:09:57.851] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0004 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0004","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142181472}
+[03:10:01.417] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142184965}
+[03:10:03.229] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0005 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0005","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142186849}
+[03:10:15.340] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142198961}
+[03:10:20.927] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142204546}
+[03:10:35.538] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142219160}
+[03:10:40.398] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142224018}
+[03:10:56.019] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142239517}
+[03:10:57.721] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142241342}
+[03:11:03.608] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142247135}
+[03:11:14.837] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/analytics color: rgb(120, 120, 120) color: inherit {"dp":"/analytics","o":"http://localhost:3000/analytics","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142258409}
+[03:11:16.170] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142259789}
+[03:11:22.816] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/analytics color: rgb(120, 120, 120) color: inherit {"dp":"/analytics","o":"http://localhost:3000/analytics","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142266371}
+[03:11:24.048] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142267541}
+[03:11:26.019] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0001 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142269640}
+[03:11:29.767] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142273308}
+[03:11:31.263] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0002 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0002","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142274884}
+[03:11:35.321] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142278842}
+[03:11:37.198] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books/B0003 color: rgb(120, 120, 120) color: inherit {"dp":"/books/[id]","o":"http://localhost:3000/books/B0003","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142280819}
+[03:11:42.218] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142285722}
+[03:11:50.692] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142294312}
+[03:12:03.805] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142307422}
+[03:12:05.712] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up","o":"http://localhost:3000/auth/sign-up","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766142309333}

@@ -1,11 +1,17 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { useLogoutMutation } from "@/lib/redux/services/baserowApi"
+import { useRouter } from "next/navigation"
 
 export function SignOutButton() {
+
+  const router = useRouter()
+  const [logout] = useLogoutMutation()
+
   const handleSignOut = async () => {
-    await fetch("/api/auth/logout", { method: "POST" })
-    window.location.href = "/auth/login"
+    await logout();
+    router.push("/auth/login")
   }
 
   return (

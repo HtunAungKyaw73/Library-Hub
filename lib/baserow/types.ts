@@ -141,8 +141,8 @@ export interface Book {
 export interface BorrowedBook {
     id: string
     borrow_id: string
-    book_id?: string | null
-    user_id?: string | null
+    book_id: string | null
+    user_id: string | null
     borrowed_at: string
     due_date: string
     returned_at: string | null
@@ -210,8 +210,8 @@ export function mapBaserowBorrowedBook(borrowed: BaserowBorrowedBook): BorrowedB
     return {
         id: borrowed.id,
         borrow_id: borrowed.borrow_id,
-        book_id: borrowed.book_id?.[0].value,
-        user_id: borrowed.user_id?.[0].value,
+        book_id: Array.isArray(borrowed.book_id) && borrowed.book_id.length > 0 ? borrowed.book_id[0].value : null,
+        user_id: Array.isArray(borrowed.user_id) && borrowed.user_id.length > 0 ? borrowed.user_id[0].value : null,
         borrowed_at: borrowed.borrowed_at,
         due_date: borrowed.due_date,
         returned_at: borrowed.returned_at ?? null,

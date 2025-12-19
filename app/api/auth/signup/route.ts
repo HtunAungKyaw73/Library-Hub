@@ -24,7 +24,7 @@ export async function POST(request: Request) {
         // Create new user
         const user = await createUser({
             email,
-            password, // Note: In production, hash the password before storing
+            password,
             username,
         })
 

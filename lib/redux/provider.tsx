@@ -15,10 +15,9 @@ export default function ReduxProvider({
 }) {
     const storeRef = useRef<AppStore | null>(null)
     if (!storeRef.current) {
-        // Create the store instance the first time this renders
         storeRef.current = makeStore()
 
-        // Hydrate the store with the initial user session
+        // Hydrate the store with the initial user session to prevent user from logging in again after refresh
         if (user) {
             storeRef.current.dispatch(setCredentials({ user }))
         }
