@@ -72,23 +72,23 @@ export function AdminDashboard() {
 
                 <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
                     <CardHeader className="flex flex-row items-center justify-between pb-2">
-                        <CardTitle className="text-sm font-medium">Currently Borrowed</CardTitle>
-                        <Clock className="h-4 w-4 text-amber-500" />
-                    </CardHeader>
-                    <CardContent>
-                        <div className="text-2xl font-bold text-amber-600">{stats.currentlyBorrowed}</div>
-                        <p className="text-xs text-muted-foreground">Books out now</p>
-                    </CardContent>
-                </Card>
-
-                <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
-                    <CardHeader className="flex flex-row items-center justify-between pb-2">
                         <CardTitle className="text-sm font-medium">Returned</CardTitle>
                         <CheckCircle className="h-4 w-4 text-emerald-500" />
                     </CardHeader>
                     <CardContent>
                         <div className="text-2xl font-bold text-emerald-600">{stats.returned}</div>
                         <p className="text-xs text-muted-foreground">Completed returns</p>
+                    </CardContent>
+                </Card>
+
+                <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
+                    <CardHeader className="flex flex-row items-center justify-between pb-2">
+                        <CardTitle className="text-sm font-medium">Currently Borrowed</CardTitle>
+                        <Clock className="h-4 w-4 text-amber-500" />
+                    </CardHeader>
+                    <CardContent>
+                        <div className="text-2xl font-bold text-amber-600">{stats.currentlyBorrowed}</div>
+                        <p className="text-xs text-muted-foreground">Books out now</p>
                     </CardContent>
                 </Card>
 
@@ -106,10 +106,10 @@ export function AdminDashboard() {
                 <Card className="border-border/40 bg-card/50 backdrop-blur-sm">
                     <CardHeader className="flex flex-row items-center justify-between pb-2">
                         <CardTitle className="text-sm font-medium">Active Users</CardTitle>
-                        <Users className="h-4 w-4 text-muted-foreground" />
+                        <Users className="h-4 w-4 text-secondary" />
                     </CardHeader>
                     <CardContent>
-                        <div className="text-2xl font-bold">{stats.uniqueUsers}</div>
+                        <div className="text-2xl font-bold text-secondary">{stats.uniqueUsers}</div>
                         <p className="text-xs text-muted-foreground">Unique borrowers</p>
                     </CardContent>
                 </Card>
