@@ -48,10 +48,12 @@ export default async function HomePage() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" asChild variant="secondary" className="text-black">
-                <Link href="/books" className="gap-2">
-                  Browse Collection
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
+                {
+                  session?.isAdmin ? <Link href="/admin">Go to Admin Dashboard</Link> : <Link href="/books" className="gap-2">
+                    Browse Collection
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                }
               </Button>
               <Button variant="outline" size="lg" asChild>
                 {

@@ -1,70 +1,8 @@
-[00:00:01.345] Server  LOG      ✓ Ready in 1041ms
-[00:00:06.055] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:06.055] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:06.055] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239128505}
-[00:00:09.569] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239132019}
-[00:00:10.781] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
-[00:00:22.822] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:22.822] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:00:22.822] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239145274}
-[00:00:23.829] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
-[00:01:45.194] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239227635}
-[00:01:56.099] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239238548}
-[00:02:00.503] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/authors color: rgb(120, 120, 120) color: inherit {"dp":"/authors","o":"http://localhost:3000/authors","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239242950}
-[00:02:08.327] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239250774}
-[00:02:17.424] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/authors color: rgb(120, 120, 120) color: inherit {"dp":"/authors","o":"http://localhost:3000/authors","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239259859}
-[00:02:48.003] Server  LOG      ✓ Compiled in 224ms
-[00:02:58.232] Server  LOG      ✓ Compiled in 179ms
-[00:03:03.782] Server  LOG      ✓ Compiled in 149ms
-[00:03:36.481] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/authors/A0001 color: rgb(120, 120, 120) color: inherit {"dp":"/authors/[id]","o":"http://localhost:3000/authors/A0001","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239338909}
-[00:03:38.321] Browser LOG     Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:03:38.321] Browser LOG     [2;38;2;124;124;124m%s[0m Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:04:50.395] Server  LOG      ✓ Compiled in 89ms
-[00:04:50.480] Browser LOG     Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:04:50.480] Browser LOG     [2;38;2;124;124;124m%s[0m Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:05:04.453] Server  LOG      ✓ Compiled in 79ms
-[00:05:04.538] Browser LOG     Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:05:04.538] Browser LOG     [2;38;2;124;124;124m%s[0m Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:05:14.632] Server  LOG      ✓ Compiled in 221ms
-[00:05:14.716] Browser LOG     Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:05:14.716] Browser LOG     [2;38;2;124;124;124m%s[0m Author {"author_id":"A0001","books":[{"id":1,"order":"1.00000000000000000000","value":"B0001"},{"id":58,"order":"58.00000000000000000000","value":"B0058"},{"id":95,"order":"95.00000000000000000000","value":"B0095"}],"borrow_books":[{"id":1,"order":"1.00000000000000000000","value":"BR0001"},{"id":101,"order":"4.00000000000000000000","value":"BR0101"},{"id":134,"order":"6.00000000000000000000","value":"BR0134"},{"id":266,"order":"11.00000000000000000000","value":"BR0266"}],"id":1,"name":"ကျော်ဝင်း၊ ဒေါက်တာ၊ သမိုင်းပါမောက္ခ(ငြိမ်း)"}
-[00:07:40.164] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-books color: rgb(120, 120, 120) color: inherit {"dp":"/my-books","o":"http://localhost:3000/my-books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239582604}
-[00:07:45.745] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239588185}
-[00:07:56.711] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239599152}
-[00:07:58.696] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766239601136}
-[00:22:45.726] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/books color: rgb(120, 120, 120) color: inherit {"dp":"/books","o":"http://localhost:3000/books","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766240488142}
-[00:24:15.425] Server  LOG      ✓ Compiled in 341ms
-[00:24:35.052] Server  LOG      ✓ Compiled in 80ms
-[00:24:40.523] Server  LOG      ✓ Compiled in 125ms
-[00:24:53.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766240616074}
-[00:25:02.497] Server  LOG      ✓ Compiled in 108ms
-[00:25:22.035] Server  LOG      ✓ Compiled in 104ms
-[00:25:35.651] Server  LOG      ✓ Compiled in 79ms
-[00:25:39.017] Server  LOG      ✓ Compiled in 110ms
-[00:26:09.419] Server  LOG      ✓ Compiled in 140ms
-[00:29:33.628] Server  LOG      ✓ Compiled in 140ms
-[00:29:33.777] Browser WARN    AG Grid: warning #94 'paginationPageSize=20', but 20 is not included in paginationPageSizeSelector=[50, 100, 200, 500]. 
-See https://www.ag-grid.com/react-data-grid/errors/94?_version_=35.0.0&pageSizeSet=true&pageSizesSet=true&pageSizeOptions=%7B%220%22%3A50%2C%221%22%3A100%2C%222%22%3A200%2C%223%22%3A500%7D&paginationPageSizeOption=20
-[00:30:12.476] Server  LOG      ✓ Compiled in 249ms
-[00:30:36.350] Server  LOG      ✓ Compiled in 177ms
-[00:31:14.655] Server  LOG      ✓ Compiled in 149ms
-[00:31:51.130] Server  LOG      ✓ Compiled in 116ms
-[00:32:12.720] Server  LOG      ✓ Compiled in 76ms
-[00:32:20.357] Server  LOG      ✓ Compiled in 89ms
-[00:32:25.676] Server  LOG      ✓ Compiled in 106ms
-[00:33:01.797] Server  LOG      ✓ Compiled in 170ms
-[00:33:14.544] Server  LOG      ✓ Compiled in 77ms
-[00:33:20.435] Server  LOG      ✓ Compiled in 114ms
-[00:34:27.224] Server  LOG      ✓ Compiled in 738ms
-[00:35:14.124] Server  LOG      ✓ Compiled in 146ms
-[00:35:31.900] Server  LOG      ✓ Compiled in 67ms
-[00:35:57.656] Server  LOG      ✓ Compiled in 108ms
-[00:36:04.622] Server  LOG      ✓ Compiled in 110ms
-[00:36:22.240] Server  LOG      ✓ Compiled in 88ms
-[00:36:49.100] Server  LOG      ✓ Compiled in 95ms
-[00:37:50.585] Server  LOG      ✓ Compiled in 203ms
-[00:38:08.228] Server  LOG      ✓ Compiled in 141ms
-[00:38:15.098] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:01.294] Server  LOG      ✓ Ready in 1015ms
+[00:00:05.922] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:05.922] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
+[00:00:05.922] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243027610}
+[00:00:47.314] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -103,13 +41,11 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:38:15.098] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:38:15.098] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:38:15.098] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766241417500}
-[00:38:31.983] Server  LOG      ✓ Compiled in 108ms
-[00:38:36.729] Server  LOG      ✓ Compiled in 88ms
-[00:38:56.086] Server  LOG      ✓ Compiled in 122ms
-[00:39:04.894] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:47.315] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:47.315] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
+[00:00:47.315] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243069001}
+[00:01:27.611] Server  LOG      ✓ Compiled in 246ms
+[00:01:34.974] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -127,7 +63,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/authors" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -148,177 +84,22 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:39:04.894] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:39:04.894] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:39:04.894] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766241467295}
-[00:39:58.629] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <head>
-                          <body
-                            className="font-manrope antialiased bg-background text-foreground"
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:39:58.629] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:39:58.629] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:39:58.629] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766241521029}
-[00:41:16.823] Server  LOG      ✓ Compiled in 133ms
-[00:41:25.459] Server  LOG      ✓ Compiled in 106ms
-[00:41:25.545] Browser WARN    AG Grid: As of version 32.2.1, using `rowSelection` with the values "single" or "multiple" has been deprecated. Use the object value instead.
-[00:41:34.636] Server  LOG      ✓ Compiled in 85ms
-[00:41:34.760] Browser WARN    AG Grid: warning #94 'paginationPageSize=20', but 20 is not included in paginationPageSizeSelector=[50, 100, 200, 500]. 
-See https://www.ag-grid.com/react-data-grid/errors/94?_version_=35.0.0&pageSizeSet=true&pageSizesSet=true&pageSizeOptions=%7B%220%22%3A50%2C%221%22%3A100%2C%222%22%3A200%2C%223%22%3A500%7D&paginationPageSizeOption=20
-[00:41:43.210] Server  LOG      ✓ Compiled in 94ms
-[00:42:04.407] Server  LOG      ✓ Compiled in 100ms
-[00:44:46.165] Server  LOG      ✓ Compiled in 107ms
-[00:45:00.811] Server  LOG      ✓ Compiled in 282ms
-[00:45:38.106] Server  LOG      ✓ Compiled in 81ms
-[00:45:56.919] Server  LOG      ✓ Compiled in 93ms
-[00:46:11.809] Server  LOG      ✓ Compiled in 74ms
-[00:46:23.761] Server  LOG      ✓ Compiled in 103ms
-[00:46:43.947] Server  LOG      ✓ Compiled in 124ms
-[00:46:49.562] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <head>
-                          <body
-                            className="font-manrope antialiased bg-background text-foreground"
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:46:49.562] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:46:49.562] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:46:49.562] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766241931953}
-[00:46:55.754] Server  LOG      ✓ Compiled in 117ms
-[00:47:03.898] Server  LOG      ✓ Compiled in 114ms
-[00:47:07.175] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:47:07.175] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:47:07.175] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766241949565}
-[00:47:26.622] Server  LOG      ✓ Compiled in 86ms
-[00:47:49.293] Server  LOG      ✓ Compiled in 77ms
-[00:47:49.467] Browser ERROR   uncaughtError: ReferenceError: gridRef is not defined
-[00:48:03.378] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:48:03.447] Server  LOG      ✓ Compiled in 70ms
-[00:48:03.511] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766242005872}
-[00:48:04.498] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:48:04.498] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:48:04.498] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766242006888}
-[00:48:05.062] Browser ERROR   uncaughtError: ReferenceError: useRef is not defined
-[00:48:37.903] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:48:37.920] Server  LOG      ✓ Compiled in 134ms
-[00:48:40.019] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/admin" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <head>
-                          <body
-                            className="font-manrope antialiased bg-background text-foreground"
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:48:40.019] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:48:40.019] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
-[00:48:40.019] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766242042408}
-[00:49:18.365] Server  LOG      ✓ Compiled in 140ms
-[00:49:21.731] Server  LOG      ✓ Compiled in 75ms
-[00:49:38.735] Server  LOG      ✓ Compiled in 86ms
-[00:49:44.320] Server  LOG      ✓ Compiled in 78ms
-[00:49:55.075] Server  LOG      ✓ Compiled in 121ms
-[00:50:01.976] Server  LOG      ✓ Compiled in 88ms
-[00:50:05.991] Server  LOG      ✓ Compiled in 91ms
-[00:50:53.454] Server  LOG      ✓ Compiled in 88ms
-[00:50:53.583] Browser WARN    AG Grid: warning #94 'paginationPageSize=20', but 20 is not included in paginationPageSizeSelector=[50, 100, 200, 500]. 
-See https://www.ag-grid.com/react-data-grid/errors/94?_version_=35.0.0&pageSizeSet=true&pageSizesSet=true&pageSizeOptions=%7B%220%22%3A50%2C%221%22%3A100%2C%222%22%3A200%2C%223%22%3A500%7D&paginationPageSizeOption=20
-[00:58:01.274] Server  LOG      ✓ Compiled in 454ms
-[01:02:41.053] Server  LOG      ✓ Compiled in 355ms
-[01:02:46.296] Server  LOG      ✓ Compiled in 117ms
+[00:01:34.974] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:34.974] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/authors","route":"/authors"}
+[00:01:34.974] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/authors color: rgb(120, 120, 120) color: inherit {"dp":"/authors","o":"http://localhost:3000/authors","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243116659}
+[00:01:52.721] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243134403}
+[00:01:58.711] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:58.711] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:01:58.711] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243140058}
+[00:02:11.180] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243152864}
+[00:02:25.387] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243167068}
+[00:03:06.330] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243208012}
+[00:04:06.147] Server  LOG      ✓ Compiled in 82ms
+[00:04:54.736] Server  LOG      ✓ Compiled in 208ms
+[00:05:11.359] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243333036}
+[00:05:20.824] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243342503}
+[00:05:26.386] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243348063}
+[00:05:27.516] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243349195}
+[00:05:34.017] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243355694}
+[00:05:45.168] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243366848}
+[00:05:46.997] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766243368675}
