@@ -27,14 +27,15 @@ export function MyBooksContent({ borrowedBooks }: MyBooksContentProps) {
 
   const handleReturn = async (borrowedBook: BorrowedBook) => {
     setReturningId(borrowedBook.id)
+    toast.success("Book returned successfully", {
+      classNames: {
+        icon: 'text-green-500',
+      }
+    })
 
     returnBook({ borrowId: borrowedBook.id, userId: borrowedBook.user_id }).unwrap().then((data) => {
+      // do nothing if it returns successfully
       router.refresh()
-      toast.success("Book returned successfully", {
-        classNames: {
-          icon: 'text-green-500',
-        }
-      })
     }, (error) => {
       console.error("Error returning book:", error)
       toast.error("Failed to return book", {
@@ -80,8 +81,8 @@ export function MyBooksContent({ borrowedBooks }: MyBooksContentProps) {
             ) : (
               currentBooks.map((item) => (
                 <div key={item.id} className="flex gap-4 p-4 border border-border rounded-lg">
-                  <div className="h-24 w-16 bg-linear-to-br from-primary/20 to-primary/5 rounded flex items-center justify-center shrink-0">
-                    <BookOpen className="h-6 w-6 text-primary/40" />
+                  <div className="h-24 w-16 bg-secondary/20 rounded flex items-center justify-center shrink-0">
+                    <BookOpen className="h-6 w-6 text-secondary" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <Link
@@ -134,8 +135,8 @@ export function MyBooksContent({ borrowedBooks }: MyBooksContentProps) {
             ) : (
               returnedBooks.map((item) => (
                 <div key={item.id} className="flex gap-4 p-4 border border-border rounded-lg opacity-75">
-                  <div className="h-24 w-16 bg-secondary rounded flex items-center justify-center shrink-0">
-                    <BookOpen className="h-6 w-6 text-muted-foreground" />
+                  <div className="h-24 w-16 bg-linear-to-br from-primary/20 to-primary/5 rounded flex items-center justify-center shrink-0">
+                    <BookOpen className="h-6 w-6 text-primary/40" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <Link

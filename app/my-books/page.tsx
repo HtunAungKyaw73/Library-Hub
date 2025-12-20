@@ -46,7 +46,7 @@ export default function MyBooksPage() {
         </div>
         <div className="lg:col-span-1">
           <LibraryCard
-            userEmail={user.email}
+            user={user}
             borrowedCount={borrowedBooks?.filter((b) => b.status === "borrowed").length || 0}
             memberSince={user.created_at}
           />

@@ -40,7 +40,7 @@ export function BookAgGrid() {
         field: "title",
         headerName: "Title",
         flex: 2,
-        minWidth: 300,
+        minWidth: 200,
         filter: "agTextColumnFilter",
         sortable: true,
         cellClass: "font-medium text-foreground",
@@ -48,8 +48,7 @@ export function BookAgGrid() {
       {
         field: "author_name",
         headerName: "Author",
-        flex: 1.5,
-        minWidth: 100,
+        width: 120,
         filter: "agTextColumnFilter",
         sortable: true,
         valueGetter: (params: any) => params.data?.author_name || "Unknown",
@@ -73,8 +72,8 @@ export function BookAgGrid() {
       {
         field: "publisher_name",
         headerName: "Publisher",
-        flex: 1.5,
-        minWidth: 150,
+        // flex: 1.5,
+        width: 120,
         filter: "agTextColumnFilter",
         sortable: true,
         valueFormatter: (params: ValueFormatterParams) => params.value || "N/A",
@@ -82,7 +81,7 @@ export function BookAgGrid() {
       {
         field: "place_of_publication",
         headerName: "Place",
-        width: 140,
+        width: 120,
         filter: "agTextColumnFilter",
         sortable: true,
         valueFormatter: (params: ValueFormatterParams) => params.value || "N/A",
