@@ -17,10 +17,8 @@ export function AuthorsList() {
     const filteredAuthors = useMemo(() => {
         if (!authors) return []
 
-        if (!searchTerm) return authors
-
         return authors.filter((author) =>
-            author.name.toLowerCase().includes(searchTerm.toLowerCase())
+            searchTerm ? author.name.toLowerCase().includes(searchTerm.toLowerCase()) : true
         ).sort((a, b) => (b.books?.length || 0) - (a.books?.length || 0))
     }, [authors, searchTerm])
 
