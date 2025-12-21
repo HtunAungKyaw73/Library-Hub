@@ -84,25 +84,32 @@ export function MyBooksContent({ borrowed, overDue, returned }: MyBooksContentPr
               </div>
             ) : (
               currentBooks.map((item) => (
-                <div key={item.id} className="flex gap-4 p-4 border border-border rounded-lg">
+                <div key={item.id} className="flex flex-col md:flex-row gap-4 p-4 border border-border rounded-lg">
                   <div className="h-24 w-16 bg-secondary/20 rounded flex items-center justify-center shrink-0">
                     <BookOpen className="h-6 w-6 text-secondary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <Link
-                      href={`/books/${item.book_id}`}
-                      className="font-semibold text-foreground hover:text-primary transition-colors"
-                    >
-                      {item.title}
-                    </Link>
-                    <p className="text-sm text-muted-foreground mt-2">{item.author_name}</p>
-                    <div className="flex items-center gap-4 mt-2 text-sm">
-                      <span className="flex items-center gap-1 text-muted-foreground">
+                    <h3 className="font-semibold text-foreground hover:text-primary transition-colors">
+                      <Link
+                        href={`/books/${item.book_id}`}
+                      >
+                        {item.title}
+                      </Link>
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-2 hover:text-amber-600 transition-colors">
+                      <Link
+                        href={`/authors/${item.author_id}`}
+                      >
+                        {item.author_name}
+                      </Link>
+                    </p>
+                    <div className="flex flex-col md:flex-row gap-4 mt-2 text-sm">
+                      <span className="flex items-center gap-1 text-primary">
                         <Calendar className="h-3.5 w-3.5" />
                         Borrowed: {formatDate(item.borrowed_at)}
                       </span>
                       <span
-                        className={`flex items-center gap-1 ${isOverdue(item.due_date) ? "text-destructive" : "text-muted-foreground"
+                        className={`flex items-center gap-1 ${isOverdue(item.due_date) ? "text-destructive" : "text-amber-600"
                           }`}
                       >
                         {isOverdue(item.due_date) ? (
@@ -138,19 +145,26 @@ export function MyBooksContent({ borrowed, overDue, returned }: MyBooksContentPr
               </div>
             ) : (
               overdueBooks.map((item) => (
-                <div key={item.id} className="flex gap-4 p-4 border border-border rounded-lg opacity-75">
+                <div key={item.id} className="flex flex-col md:flex-row gap-4 p-4 border border-border rounded-lg opacity-75">
                   <div className="h-24 w-16 bg-linear-to-br from-destructive/20 to-destructive/5 rounded flex items-center justify-center shrink-0">
                     <BookOpen className="h-6 w-6 text-destructive/40" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <Link
-                      href={`/books/${item.book_id}`}
-                      className="font-semibold text-destructive/90 hover:text-destructive transition-colors"
-                    >
-                      {item.title}
-                    </Link>
-                    <p className="text-sm text-muted-foreground mt-2">{item.author_name}</p>
-                    <div className="flex items-center gap-4 mt-2 text-sm text-muted-foreground">
+                    <h3 className="font-semibold text-foreground hover:text-primary transition-colors">
+                      <Link
+                        href={`/books/${item.book_id}`}
+                      >
+                        {item.title}
+                      </Link>
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-2 hover:text-amber-600 transition-colors">
+                      <Link
+                        href={`/authors/${item.author_id}`}
+                      >
+                        {item.author_name}
+                      </Link>
+                    </p>
+                    <div className="flex flex-col md:flex-row gap-4 mt-2 text-sm text-muted-foreground">
                       <span className="flex text-primary items-center gap-1">
                         <Calendar className="h-3.5 w-3.5" />
                         Borrowed: {formatDate(item.borrowed_at)}
@@ -192,19 +206,26 @@ export function MyBooksContent({ borrowed, overDue, returned }: MyBooksContentPr
               </div>
             ) : (
               returnedBooks.map((item) => (
-                <div key={item.id} className="flex gap-4 p-4 border border-border rounded-lg opacity-75">
+                <div key={item.id} className="flex flex-col md:flex-row gap-4 p-4 border border-border rounded-lg opacity-75">
                   <div className="h-24 w-16 bg-linear-to-br from-primary/20 to-primary/5 rounded flex items-center justify-center shrink-0">
                     <BookOpen className="h-6 w-6 text-primary/40" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <Link
-                      href={`/books/${item.book_id}`}
-                      className="font-semibold text-foreground hover:text-primary transition-colors"
-                    >
-                      {item.title}
-                    </Link>
-                    <p className="text-sm text-muted-foreground mt-2">{item.author_name}</p>
-                    <div className="flex items-center gap-4 mt-2 text-sm text-muted-foreground">
+                    <h3 className="font-semibold text-foreground hover:text-primary transition-colors">
+                      <Link
+                        href={`/books/${item.book_id}`}
+                      >
+                        {item.title}
+                      </Link>
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-2 hover:text-amber-600 transition-colors">
+                      <Link
+                        href={`/authors/${item.author_id}`}
+                      >
+                        {item.author_name}
+                      </Link>
+                    </p>
+                    <div className="flex flex-col md:flex-row gap-4 mt-2 text-sm text-muted-foreground">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3.5 w-3.5" />
                         Borrowed: {formatDate(item.borrowed_at)}

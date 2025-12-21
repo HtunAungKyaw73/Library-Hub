@@ -99,7 +99,7 @@ export function AuthorBooks({ authorId }: AuthorBooksProps) {
                                     </CardTitle>
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-3 pt-1">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
                                     <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
                                         <Globe className="h-3.5 w-3.5 opacity-60" />
                                         <span className="truncate">{book.language || "Unknown"}</span>
