@@ -59,7 +59,7 @@ export function UserBooks({ userId }: UserBooksProps) {
             <div className="space-y-6 text-center py-12 border-2 border-dashed rounded-xl">
                 <BookOpen className="h-12 w-12 mx-auto text-muted-foreground opacity-50" />
                 <div>
-                    <h2 className="text-xl font-semibold">{books?.[0].username || "User"}</h2>
+                    <h2 className="text-xl font-semibold">{user?.username || "User"}</h2>
                     <p className="text-muted-foreground">This user has not borrowed any books yet.</p>
                 </div>
                 <Button asChild variant="outline">
